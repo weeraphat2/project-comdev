@@ -1,0 +1,433 @@
+<html>   
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<title>Home</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div id="logo">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/274250431_1331005467406933_5329022942353479360_n.png?_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeHDnS2yD1Ztu2ZxhK5QbYcpTwT1Gu667HZPBPUa7rrsdj5Vlcp3DgTay8INVsxqaND69Y8v9MFlibV7IslDdqWL&_nc_ohc=IdWtkF81OcMAX_MN09Y&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIuT6P8oWPUqQoDXKfmMZovt_osXlcf_nWdQF0LTUl0Pg&oe=6253F6C3" alt="Logo">
+        </div>
+        <ul>
+           
+            <li class="item"><a href={{ url_for(login) }}><i class="fa-solid fa-user"></i></a></li>
+            <li class="item"><a href={{ url_for(login) }}><i class="fa-solid fa-right-from-bracket"></i></a></li>
+        </ul>
+    </nav>
+   
+ 	<div class="dashboard">
+		<div class="dashboard-bander">
+			<img src="https://i.pinimg.com/564x/3f/2b/59/3f2b59ce51ceab679682e22bf9d6be41.jpg">
+			<div class="topMenu"></div>
+	</div>
+
+		<section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">Ordered</button>
+        	</section>
+
+
+
+		<!-- box product -->
+		<h3 class="dashboard-title">เมนูแนะนำ</h3>
+		<div class="dashboard-food">
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2018/12/17/d5147901c9ac4fb792d26fa6915c2720.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ซี่โครงหมูอบ<br><span class="price">$10</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://global-blog.cpcdn.com/th/2021/09/-----------------------------------.jpeg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">เครปไข่ขาวไส้ไก่คลีน<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+				
+			<div class="product">
+				<img class="food-image" src="https://img.kapook.com/u/2016/surauch/Health/v11.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">เต้าหู้ยัดไส้เห็ดปรุงรส<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2018/12/17/71ede90ccda64400a10a97c851f1c0bc.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ผัดฉ่าทะเล<br><span  class="price">$2</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2018/11/12/5fe3800e5f224822b768d1248d84c510.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ข้าวหน้าเนื้อภูเขาไฟ<br><span class="price">$8</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- box-product2 -->
+		<h5 class="dashboard-seafood">เมนูทะเล</h5>
+		<div class="dashboard-food">
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2017/08/12/5b1b5c1c358649b285acb6ad6ada9a31.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ตำถาดทะเล<br><span class="price">$6</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://i.pinimg.com/564x/79/30/0c/79300cf11dabb2314e8a2f43d334419b.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ปูไข่<br><span class="price">$9</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+				
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2019/05/22/5ace86a2edd74dd2b40d87bd21a1e459.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ซีฟู้ดอบวุ้นเส้น<br><span class="price">$2</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://static.wixstatic.com/media/abcd56_043073c6f18f4c71a9f86986bfa4d34b~mv2.jpg/v1/fill/w_1200,h_800,al_c/abcd56_043073c6f18f4c71a9f86986bfa4d34b~mv2.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">หอยนางรม<br><span class="price">$5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://www.wakanafooddelivery.com/images/product/salmon-sashimi-size-l-japanese-food-500.jpg?v=1" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">แซลมอนซาซิมิ<br><span class="price">$15</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- box-product3 -->
+		<h5 class="dashboard-pig">เมนูหมู</h5>
+		<div class="dashboard-food">
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2018/12/25/8473108045754749a0afe82d1f955150.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">หมูทอดเกลือ<br><span class="price">$2.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2018/04/30/8575db5c14f54b598121bbeae0b908df.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ลาบหมูกรอบ<br><span class="price">$3</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+				
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2018/05/25/bc59677defba440b9d6a4507b903df65.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ข้าวหน้าหมูทอด<br><span class="price">$2</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://brilhodealuguel.com/wp-content/uploads/2020/07/%E0%B9%80%E0%B8%A1%E0%B8%99%E0%B8%B9%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%81%E0%B8%94%E0%B8%87-%E0%B8%A3%E0%B8%AA%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%AD%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%A2.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ข้าวหมูแดง<br><span class="price">$2.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://almocooking.com/wp-content/uploads/2019/07/687e324b-5e8b-4462-983e-67b1bc9cf959.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ผัดกะเพราหมูสับ<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<!-- box-product4 -->
+		<h5 class="dashboard-meat">เมนูเนื้อ</h5>
+		<div class="dashboard-food">
+			<div class="product">
+				<img class="food-image" src="https://howtocookhub.com/wp-content/uploads/2021/07/%E0%B8%9E%E0%B8%B0%E0%B9%81%E0%B8%99%E0%B8%87%E0%B9%80%E0%B8%99%E0%B8%B7%E0%B9%89%E0%B8%AD.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">พะแนงเนื้อ<br><span class="price">$2</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://shopee.co.th/blog/wp-content/uploads/2021/04/%E0%B9%80%E0%B8%A1%E0%B8%99%E0%B8%B9%E0%B9%80%E0%B8%99%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%A7%E0%B8%B1%E0%B8%A7-1140x800.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">สเต๊กเนื้อ<br><span class="price">$6.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+				
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2019/02/15/9424f3e55d214f6292c096b8855f21d3.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">เนื้อแดดเดียว<br><span class="price">$3.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/l/2017/06/26/19db68d9e1084117820a4c0ca37bfd0f.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">เสือร้องไห้<br><span class="price">$2.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/400x0/2019/03/18/11e7bbd7bbab421f9e1f2bc6c1d64e59.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">แกงเขียวหวานเนื้อ<br><span class="price">$2.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- box-product5 -->
+		<h5 class="dashboard-vegan">เมนูมังสวิรัติ/เมนูเจ/เมนูคลีน</h5>
+		<div class="dashboard-food">
+			<div class="product">
+				<img class="food-image" src="https://image.sistacafe.com/images/uploads/content_image/image/457865/1507102578-6a8d1c081e679d383a6e475732a1299b.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">เปาะเปี๊ยะเจ<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://img.kapook.com/u/2021/wanwanat/1754712485.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">สลัดเต้าหู้มังสวิรัติ<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+				
+			<div class="product">
+				<img class="food-image" src="https://img.kapook.com/u/2021/wanwanat/1659118147.jpg">
+				<div class="food-detail">
+					<h4 class="food-name">เบอร์ริโตไส้ถั่วมังสวิรัติ<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://global-blog.cpcdn.com/th/2021/09/------------------------------------------------------------------------.jpeg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ธัญพืชคลีน<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://cms.dmpcdn.com/women/2020/04/08/e99358a0-796f-11ea-b4e9-0984d8e8648f_original.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">อกไก่ผัดพริกกระเทียม<br><span class="price">$2.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- box-product6 -->
+		<h5 class="dashboard-chicken">เมนูไก่</h5>
+		<div class="dashboard-food">
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1920x0/2017/06/22/bbf899f7ab4341dea4aec6330c2afafd.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ข้าวมันไก่<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://shopee.co.th/blog/wp-content/uploads/2021/03/%E0%B9%80%E0%B8%A1%E0%B8%99%E0%B8%B9%E0%B8%99%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%81%E0%B9%88-1140x783.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">น่องไก่ย่าง<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+				
+			<div class="product">
+				<img class="food-image" src="https://img.wongnai.com/p/1968x0/2020/01/26/e179a7f99e4649e88a10b8044bcc4d05.jpg">
+				<div class="food-detail">
+					<h4 class="food-name">ไก่รวนเค็ม<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://food.mthai.com/app/uploads/2017/07/Chicken-wings-fried-fish-sauce.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ปีกไก่ทอด<br><span class="price">$1.5</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div>
+
+			<div class="product">
+				<img class="food-image" src="https://s359.kapook.com/pagebuilder/ede2a9da-a1fc-478f-80fa-0acd98297b09.jpg" alt="" class="product-img">
+				<div class="food-detail">
+					<h4 class="food-name">ไก่ต้มน้ำปลา<br><span class="price">$2</span></h4>
+					<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+				</div>
+			</div> 
+		</div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
+}
+
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+
+    var addToCartButtons = document.getElementsByClassName('product')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+    }
+
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+}
+
+function purchaseClicked() {
+    alert('Thank you for your purchase')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+}
+
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+}
+
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('food-name')[0].innerText
+    var price = shopItem.getElementsByClassName('price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('food-image')[0].src
+    addItemToCart(title, price, imageSrc)
+    updateCartTotal()
+}
+
+function addItemToCart(title, price, imageSrc) {
+    var cartRow = document.createElement('div')
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == title) {
+            alert('This item is already added to the cart')
+            return
+        }
+    }
+    var cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+            <span class="cart-item-title">${title}</span>
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </div>`
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+
+function updateCartTotal() {
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+</script>
+

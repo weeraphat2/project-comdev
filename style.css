@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Itim&family=Josefin+Sans&family=KoHo:wght@300&family=Pacifico&family=Sriracha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+    --text-color:black;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align:center;
+    background-color: rgb(248, 248, 248);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    list-style: none;
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+}
+
+#navbar::before{
+    content: "";
+    background-color:#ff0000;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: Poppins, sans-serif;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    display: inline-block;;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    float: right;
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    transition: all 0.3s ease 0s;
+
+}
+
+
+
+.cart{
+    position:fixed;
+    top: 0;
+    right: -100%;
+    right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: white;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.cart.active{
+    right: 0;
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+
+.cart-quantity{
+    border: 1px solid black;
+    outline-color: #ff0000;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5 rem;
+    border-top: 1px solid black;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: red;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background: black;
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.dashboard {
+    height: 100%;
+    width: 100%;
+    padding-right: 360 px;
+    
+}
+
+
+.dashboard-bander {
+    height: 300 px;
+    width: 100%;
+    margin-top: 4rem;
+    padding: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    left: 10px;
+    right: 10px;
+}
+
+
+.dashboard-bander > img {
+    width: 99%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+
+.topMenu  {
+    position: absolute;
+    color: lightgrey;
+    top: 25%;
+    left: 10%;
+    right: center;
+    font-weight:80px ;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+
+.topMenu > h1 > span {
+    color: black;
+    position: relative;
+
+}
+
+
+.dashboard-title  {
+    margin-top: 60px;
+    margin-left: 40px;
+    left: 60%;
+    font-size: 40px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+
+
+.dashboard-food {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+    column-gap: 30px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+.product  {
+    border-spacing: 30% ;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+
+.food-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+.food-detail {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+.food-detail > h4 > span {
+    float: right;
+}
+
+
+
+
+
+.dashboard-seafood  {
+    margin-top: 150px;
+    margin-left: 40px;
+    left: 60%;
+    font-size: 40px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+
+.dashboard-food1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+    column-gap: 30px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+.product1  {
+    border-spacing: 30% ;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+
+.food-image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+.food-detail1 {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+
+
+
+
+
+.dashboard-pig  {
+    margin-top: 150px;
+    margin-left: 40px;
+    left: 60%;
+    font-size: 40px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+.dashboard-food2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+    column-gap: 30px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+.product2  {
+    border-spacing: 30% ;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+
+.food-image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+.food-detail2 {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+
+
+
+
+.dashboard-meat  {
+    margin-top: 150px;
+    margin-left: 40px;
+    left: 60%;
+    font-size: 40px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+.dashboard-food3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+    column-gap: 30px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+.product3  {
+    border-spacing: 30% ;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+
+.food-image3 {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+.food-detail3 {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+
+
+
+
+.dashboard-vegan   {
+    margin-top: 200px;
+    margin-left: 40px;
+    left: 60%;
+    font-size: 40px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+.dashboard-food4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+    column-gap: 30px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+.product4  {
+    border-spacing: 30% ;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+
+.food-image4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+.food-detail4 {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+.food-detail4 > h6 > span {
+    float: right;
+}
+
+
+
+.dashboard-chicken   {
+    margin-top: 200px;
+    margin-left: 40px;
+    left: 60%;
+    font-size: 40px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+.dashboard-food5 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+    column-gap: 30px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+.product5  {
+    border-spacing: 30% ;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+
+.food-image5 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+.food-detail5 {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Sriracha', cursive;
+}
+
+
+.food-detail4 > h6 > span {
+    float: right;
+}
+
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    background: red;
+    color: white;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+btn btn-primary shop-item-button {
+    background-color: black ;
+}
